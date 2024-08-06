@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordian Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <style>
+      body {
+        font-family: "inter", sans-serif;
+        color: #344a40;
+        line-height: 1;
+        padding: 24px;
+      }
+      .accordian {
+        width: 700px;
+        margin: 10px 200px;
+        padding: 4px;
+        /* display: flex;
+        flex-direction: column; */
+      }
+      .icon {
+        height: 24px;
+        width: 24px;
+        stroke: #087f5b;
+      }
+
+      .item {
+        display: grid;
+        grid-template-columns: 0.1fr 0.9fr;
+        padding: 24px;
+        /* border-top: solid #087f5b; */
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+      }
+      .number,
+      .text {
+        font-size: 24px;
+        font-weight: 500;
+        color: #087f5b;
+      }
+      .heading {
+        display: grid;
+        grid-template-columns: 0.9fr 0.1fr;
+        align-items: center;
+      }
+
+      .hidden-box {
+        display: none;
+        line-height: 1.6;
+        margin-bottom: 24px;
+        align-items: center;
+      }
+      .hidden-box ul {
+        color: #868e96;
+        margin-left: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .hidden-box li {
+        margin-top: 12px;
+        line-height: 12px;
+      }
+      .hidden-box p {
+        padding: 8px;
+        margin-right: 30px;
+        font-weight: 550;
+      }
+      .container_1 {
+        padding: 24px;
+        width: 650px;
+        margin: 50px 100px;
+        /* margin-bottom: 100px; */
+        display: grid;
+        align-items: center;
+        grid-template-columns: 0.1fr 0.9fr;
+        /* border-top:solid #087f5b; */
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+      }
+      .container_2 {
+        padding: 24px;
+        width: 650px;
+        margin: 50px 100px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 0.1fr 0.9fr;
+        /* border-top:solid #087f5b; */
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+      }
+      .heading_2 {
+        display: grid;
+        grid-template-columns: 0.9fr 0.1fr;
+        align-items: center;
+      }
+      .heading_2 p {
+        font-weight: 800;
+        font-size: 20px;
+      }
+      .decimal {
+        font-size: 24px;
+        font-weight: 500;
+        opacity: 0.3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container_1">
+      <p class="decimal">01</p>
+      <div class="heading_2">
+         <p>Where are these chairs assembled?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </svg>
+        
+      </div>
+       
+      </div>
+    </div> -->
+    <div class="accordian">
+      <div class="item">
+        <p class="number">01</p>
+
+        <div>
+          <div class="heading">
+            <p class="text">Where are these chairs assembled?</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </div>
+
+          <div class="hidden-box">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+              illo quis qui est aut repudiandae quisquam velit ipsa molestias
+              unde. Consequatur veniam maiores porro officiis!
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordian">
+      <div class="item">
+        <p class="number">02</p>
+
+        <div>
+          <div class="heading">
+            <p class="text">How long do I have to return my chair?</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </div>
+
+          <div class="hidden-box">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+              illo quis qui est aut repudiandae quisquam velit ipsa molestias
+              unde. Consequatur veniam maiores porro officiis!
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordian">
+      <div class="item">
+        <p class="number">03</p>
+
+        <div>
+          <div class="heading">
+            <p class="text">Do you ship to countries outsie the EU</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </div>
+
+          <div class="hidden-box">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+              illo quis qui est aut repudiandae quisquam velit ipsa molestias
+              unde. Consequatur veniam maiores porro officiis!
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container_2">
+      <p class="decimal">03</p>
+      <div class="heading_2">
+         <p>Do you ship to countries outside the EU</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </svg>
+      </div> -->
+  </body>
+</html>
